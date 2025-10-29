@@ -1,0 +1,9 @@
+Git clone "url" # permet de copier du code de git hub a vscode
+Git branch # affiche les branches presente dans le projet git hub
+Git checkout -b "nom" # cree une branche "nom"
+Git add . #ajouter toutes les modifications
+Git add "nom du fichier" #ajoute les modifications d'un fichier
+git commit -m "added comment" #qu'elles sont les modifications
+git push -u origin "branche" # sauvegarde la branche
+git log # affiche les commits
+git merge "nom de la branche" # permet de fusionner deux branches
