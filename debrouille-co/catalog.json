@@ -1,0 +1,23 @@
+[
+  {
+    "id": "p1",
+    "title": "Porte-clé en bois",
+    "desc": "Petit porte-clé artisanal en bois, parfait pour le sac ou les clés.",
+    "price": 5.00,
+    "img": "assets/porte_cle.jpg"
+  },
+  {
+    "id": "p2",
+    "title": "Mini étagère",
+    "desc": "Petite étagère décorative en bois naturel.",
+    "price": 20.00,
+    "img": "assets/etagere.jpg"
+  },
+  {
+    "id": "p3",
+    "title": "Figurine bois",
+    "desc": "Figurine sculptée à la main, idéale comme déco.",
+    "price": 12.50,
+    "img": "assets/figurine.jpg"
+  }
+]

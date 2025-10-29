@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Débrouille & Co — Boutique</title>
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Débrouille & Co</h1>
+    <nav>
+      <button id="view-catalog">Catalogue</button>
+      <button id="view-cart">Panier (<span id="cart-count">0</span>)</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="catalog"></section>
+    <section id="cart" style="display:none;"></section>
+    <section id="order" style="display:none;"></section>
+  </main>
+
+  <template id="product-template">
+  <article class="product">
+    <img class="thumb" alt="vignette produit">
+    <div class="content">
+      <h3 class="title"></h3>
+      <p class="desc"></p>
+      <div class="meta"><span class="price"></span></div>
+      <button class="add-to-cart">Ajouter</button>
+    </div>
+  </article>
+  </template>
+
+  <script src="js/app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js').catch(()=>{});
+    }
+  </script>
+</body>
+</html>
